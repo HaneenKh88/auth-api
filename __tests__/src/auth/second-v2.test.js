@@ -30,7 +30,8 @@ describe('clothes', () => {
           name: 'pizza',
           calories: '20',
           type: 'PROTIEN',
-        }).set('Authorization', `Bearer ${token}`);
+        })
+        .set('Authorization', `Bearer ${token}`);
         expect(response.status).toEqual(201);
         expect(response.body.name).toEqual('pizza');
         id = response.body._id;
