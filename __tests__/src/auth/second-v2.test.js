@@ -22,8 +22,6 @@ beforeAll(async (done) => {
 const user = { username: 'admin' };
 const token = jwt.sign(user, SECRET);
 
-const basic = { username: 'basic' };
-const basicToken = jwt.sign(basic, SECRET);
 
 describe('clothes', () => {
 
