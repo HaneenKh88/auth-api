@@ -29,6 +29,15 @@ app.use('/api/v2', v2Routes);
 
 app.use(authRoutes);
 
+app.get('/', HomeHandler);
+
+
+function  HomeHandler(req, res) 
+ {
+    res.send('Hello World');
+ }
+
+
 app.use('*', notFoundHandler);
 app.use(errorHandler);
 
